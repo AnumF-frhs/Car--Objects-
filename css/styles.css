@@ -1,34 +1,86 @@
-/* .container {
-    justify-self: center;
-} */
-
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #f56868;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #aa0404;
-  color: white;
-}
-
+/* Base styles and Typography */
 body {
-    background-color: #ffffff;
+    background-color: #f0f8ff; /* A soft Alice Blue to make colors pop */
+    font-family: 'Fredoka', sans-serif; /* The new cartoony font */
+    color: #333;
+}
+
+/* Cartoony Navigation */
+.cartoony-nav {
+    background-color: #ff5e5e; /* Bright red/pink base */
+    border-bottom: 5px solid #222; /* Thick comic outline */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cartoony-nav a {
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-right: 3px solid #222;
+    transition: all 0.2s ease;
+}
+
+.cartoony-nav a:first-child {
+    border-left: 3px solid #222;
+}
+
+.cartoony-nav a:hover {
+    background-color: #ff8c8c;
+    color: #222;
+}
+
+.cartoony-nav a.active {
+    background-color: #e02424;
+    color: white;
+}
+
+/* Page Title with a 3D Comic Text Effect */
+.page-title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ffd700; /* Bright Yellow */
+    text-shadow: 3px 3px 0px #222, 6px 6px 0px #ff5e5e; /* Hard stacked shadows */
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+/* Car Cards - The Core "Cartoon" Effect */
+.car-card {
+    background-color: white;
+    border: 4px solid #222; /* Thick black border */
+    border-radius: 20px; /* Highly rounded corners */
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 8px 8px 0px #222; /* Hard, unblurred drop shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Make it "jump" when you hover over it */
+.car-card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 13px 13px 0px #222;
+}
+
+/* Styling the images to float nicely */
+.car-card img {
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.2)); /* Gives the cars their own shadow inside the box */
+}
+
+.car-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
 }
