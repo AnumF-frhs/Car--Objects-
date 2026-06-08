@@ -15,6 +15,15 @@ let carDisplay = {
     },
 }
 
+function showSports() {
+  document.getElementById('names').textContent = carDisplay.sports.make;
+  document.getElementById('health').textContent = characters.panther.health;
+  document.getElementById('attack').textContent = characters.panther.attack;
+  document.getElementById('defense').textContent = characters.panther.defense;
+  document.getElementById('description').textContent = characters.describeA();
+
+
+}
 
 
 
