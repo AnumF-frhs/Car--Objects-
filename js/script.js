@@ -24,9 +24,7 @@ let carDisplay = {
         }
     },
 
-    priceCat: function () {
-
-
+priceCat: function () {
 if (carDisplay.price > 50000) {
 return “Luxury”
 } else if (carDisplay.price >30000) {
@@ -68,7 +66,7 @@ function showSports() {
 //   document.getElementById('names').textContent = carDisplay.sports.make;
 
   document.getElementById('performace').textContent = carDisplay.performanceRat();
-//  document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+  document.getElementById('pricingRat').textContent = carDisplay.priceCat();
 
 
 }
