@@ -7,14 +7,41 @@ let carDisplay = {
         model: "Mustang",
         year: 2015,
         category: "Sports Car",
-        color: "Metallic Blue",
+        color: "Metallic",
         price: "$63,425",
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
     },
+
+    performanceRat: function () {
+        if (carDisplay.horsepower === "Fast" || "Very Fast") {
+            return "High Performance"
+        } else if (carDisplay.horsepower === "Moderate") {
+            return "Medium Performance"
+        } else {
+            return "Low Performance"
+        }
+    },
+
+    // priceCat: function ()
+
+    mona: {
+        make: "The Phantom Thieves",
+        model: "Citroën H Van",
+        year: 1947,
+        category: "Ford",
+        color: "Classic Black",
+        price: "$34,457",
+        fuelType: "Fish",
+        horsepower: "Very Fast",
+        seatingCapacity: "Nine seats "
+    }
+
+    
 }
 
+document.getElementById('sportscar-btn').addEventListener('click', showSports);
 function showSports() {
   document.getElementById('make').textContent = carDisplay.sports.make;
   document.getElementById('model').textContent = carDisplay.sports.model;
@@ -28,8 +55,8 @@ function showSports() {
 //   document.getElementById('performace').textContent = carDisplay.sports.make;
 //   document.getElementById('names').textContent = carDisplay.sports.make;
 
-//    document.getElementById('performace').textContent = characters.describeA();
-//   document.getElementById('pricingRat').textContent = characters.describeA();
+  document.getElementById('performace').textContent = carDisplay.performanceRat();
+//  document.getElementById('pricingRat').textContent = carDisplay.priceCat();
 
 
 }
