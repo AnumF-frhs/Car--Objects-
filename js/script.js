@@ -16,11 +16,20 @@ let carDisplay = {
 }
 
 function showSports() {
-  document.getElementById('names').textContent = carDisplay.sports.make;
-  document.getElementById('health').textContent = characters.panther.health;
-  document.getElementById('attack').textContent = characters.panther.attack;
-  document.getElementById('defense').textContent = characters.panther.defense;
-  document.getElementById('description').textContent = characters.describeA();
+  document.getElementById('make').textContent = carDisplay.sports.make;
+  document.getElementById('model').textContent = carDisplay.sports.model;
+  document.getElementById('year').textContent = carDisplay.sports.year;
+  document.getElementById('carType').textContent = carDisplay.sports.category;
+  document.getElementById('color').textContent = carDisplay.sports.color;
+  document.getElementById('price').textContent = carDisplay.sports.price;
+  document.getElementById('fuelType').textContent = carDisplay.sports.fuelType;
+  document.getElementById('horsepower').textContent = carDisplay.sports.horsepower;
+  document.getElementById('seatingCapacity').textContent = carDisplay.sports.seatingCapacity;
+//   document.getElementById('performace').textContent = carDisplay.sports.make;
+//   document.getElementById('names').textContent = carDisplay.sports.make;
+
+//    document.getElementById('performace').textContent = characters.describeA();
+//   document.getElementById('pricingRat').textContent = characters.describeA();
 
 
 }
