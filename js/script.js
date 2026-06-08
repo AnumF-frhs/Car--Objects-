@@ -8,7 +8,7 @@ let carDisplay = {
         year: 2015,
         category: "Sports Car",
         color: "Metallic",
-        price: "$63,425",
+        price: 63425,
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
@@ -24,7 +24,18 @@ let carDisplay = {
         }
     },
 
-    // priceCat: function () {
+    priceCat: function () {
+
+
+if (carDisplay.price > 50000) {
+return “Luxury”
+} else if (carDisplay.price >30000) {
+return “Moderate”
+} else {
+return “Budget Friendly”
+}
+}
+
     
 
     mona: {
