@@ -42,7 +42,7 @@ return “Budget Friendly”
         year: 1947,
         category: "Ford",
         color: "Classic Black",
-        price: "$34,457",
+        price: 34457,
         fuelType: "Fish",
         horsepower: "Very Fast",
         seatingCapacity: "Nine seats "
