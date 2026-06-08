@@ -24,7 +24,8 @@ let carDisplay = {
         }
     },
 
-    // priceCat: function ()
+    // priceCat: function () {
+    
 
     mona: {
         make: "The Phantom Thieves",
