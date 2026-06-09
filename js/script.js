@@ -15,7 +15,7 @@ let carDisplay = {
     },
 
     performanceRat: function () {
-        if (carDisplay.sports.horsepower === "Fast" || "Very Fast") {
+        if (carDisplay.sports.horsepower === "Fast") {
             return "High Performance"
         } else if (carDisplay.sports.horsepower === "Moderate") {
             return "Medium Performance"
@@ -48,12 +48,12 @@ let carDisplay = {
         color: "Classic Black",
         price: 34457,
         fuelType: "Fish",
-        horsepower: "Very Fast",
+        horsepower: "Fast",
         seatingCapacity: "Nine seats "
     },
 
       performanceRatM: function () {
-        if (carDisplay.mona.horsepower === "Fast" || "Very Fast") {
+        if (carDisplay.mona.horsepower === "Fast") {
             return "High Performance"
         } else if (carDisplay.mona.horsepower === "Moderate") {
             return "Medium Performance"
@@ -86,9 +86,31 @@ let carDisplay = {
         color: "Teal Blue",
         price: 425,
         fuelType: "Flowers",
-        horsepower: "Slow",
+        horsepower: "Moderate",
         seatingCapacity: "One seat "
     },
+
+    performanceRatJ: function () {
+        if (carDisplay.jose.horsepower === "Fast") {
+            return "High Performance"
+        } else if (carDisplay.jose.horsepower === "Moderate") {
+            return "Medium Performance"
+        } else {
+            return "Low Performance"
+        }
+    },
+
+
+    priceCatJ: function () {
+        if (carDisplay.jose.price > 50000) {
+            return "Luxury"
+        } else if (carDisplay.jose.price >30000) {
+            return "Moderate"
+        } else {
+            return "Budget Friendly"
+        }
+    }, 
+
 
     van: {
         make: "Pontiac",
@@ -102,6 +124,31 @@ let carDisplay = {
         seatingCapacity: "8 seats"
     },
 
+     performanceRatV: function () {
+        if (carDisplay.van.horsepower === "Fast") {
+            return "High Performance"
+        } else if (carDisplay.van.horsepower === "Moderate") {
+            return "Medium Performance"
+        } else {
+            return "Low Performance"
+        }
+    },
+
+
+    priceCatV: function () {
+        if (carDisplay.van.price > 50000) {
+            return "Luxury"
+        } else if (carDisplay.van.price >30000) {
+            return "Moderate"
+        } else {
+            return "Budget Friendly"
+        }
+    }, 
+
+
+
+
+
      buggy: {
         make: "Mario",
         model: "Go-Kart",
@@ -110,9 +157,33 @@ let carDisplay = {
         color: "Strawberry Red",
         price: 240,
         fuelType: "Electric",
-        horsepower: "Very Fast",
+        horsepower: "Fast",
         seatingCapacity: "One seat"
+    },
+
+      performanceRatB: function () {
+        if (carDisplay.buggy.horsepower === "Fast") {
+            return "High Performance"
+        } else if (carDisplay.buggy.horsepower === "Moderate") {
+            return "Medium Performance"
+        } else {
+            return "Low Performance"
+        }
+    },
+
+
+    priceCatB: function () {
+        if (carDisplay.buggy.price > 50000) {
+            return "Luxury"
+        } else if (carDisplay.buggy.price >30000) {
+            return "Moderate"
+        } else {
+            return "Budget Friendly"
+        }
     }
+
+
+    
 
 
     
@@ -175,8 +246,8 @@ function showJose() {
   document.getElementById('seatingCapacity').textContent = carDisplay.jose.seatingCapacity;
 
   
-  document.getElementById('performace').textContent = carDisplay.performanceRat();
-    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+  document.getElementById('performace').textContent = carDisplay.performanceRatJ();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCatJ();
 
 }
 
@@ -196,8 +267,8 @@ function showVan() {
   document.getElementById('seatingCapacity').textContent = carDisplay.van.seatingCapacity;
 
   
-  document.getElementById('performace').textContent = carDisplay.performanceRat();
-    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+  document.getElementById('performace').textContent = carDisplay.performanceRatV();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCatV();
 
 }
 
@@ -217,8 +288,8 @@ function showBuggy() {
   document.getElementById('seatingCapacity').textContent = carDisplay.buggy.seatingCapacity;
 
   
-  document.getElementById('performace').textContent = carDisplay.performanceRat();
-    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+  document.getElementById('performace').textContent = carDisplay.performanceRatB();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCatB();
 
 }
 
