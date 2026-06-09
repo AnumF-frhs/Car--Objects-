@@ -8,16 +8,16 @@ let carDisplay = {
         year: 2015,
         category: "Sports Car",
         color: "Metallic",
-        price: "$63425",
+        price: 63425,
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
     },
 
     performanceRat: function () {
-        if (carDisplay.horsepower === "Fast" || "Very Fast") {
+        if (carDisplay.sports.horsepower === "Fast" || "Very Fast") {
             return "High Performance"
-        } else if (carDisplay.horsepower === "Moderate") {
+        } else if (carDisplay.sports.horsepower === "Moderate") {
             return "Medium Performance"
         } else {
             return "Low Performance"
@@ -26,9 +26,9 @@ let carDisplay = {
 
 
     priceCat: function () {
-        if (carDisplay.price === "50000") {
+        if (carDisplay.sports.price > 50000) {
             return "Luxury"
-        } else if (carDisplay.price ==="30000") {
+        } else if (carDisplay.sports.price >30000) {
             return "Moderate"
         } else {
             return "Budget Friendly"
@@ -46,11 +46,34 @@ let carDisplay = {
         year: 1947,
         category: "Ford",
         color: "Classic Black",
-        price: "$34457",
+        price: 34457,
         fuelType: "Fish",
         horsepower: "Very Fast",
         seatingCapacity: "Nine seats "
     },
+
+      performanceRatM: function () {
+        if (carDisplay.mona.horsepower === "Fast" || "Very Fast") {
+            return "High Performance"
+        } else if (carDisplay.mona.horsepower === "Moderate") {
+            return "Medium Performance"
+        } else {
+            return "Low Performance"
+        }
+    },
+
+
+    priceCatM: function () {
+        if (carDisplay.mona.price > 50000) {
+            return "Luxury"
+        } else if (carDisplay.mona.price >30000) {
+            return "Moderate"
+        } else {
+            return "Budget Friendly"
+        }
+    }, 
+
+
 
   
   
@@ -61,7 +84,7 @@ let carDisplay = {
         year: 1954,
         category: "Convertible",
         color: "Teal Blue",
-        price: "$425",
+        price: 425,
         fuelType: "Flowers",
         horsepower: "Slow",
         seatingCapacity: "One seat "
@@ -73,7 +96,7 @@ let carDisplay = {
         year: 2026,
         category: "SUV",
         color: "Husk Grey",
-        price: "$48,800",
+        price: 48800,
         fuelType: "Hyrbrid",
         horsepower: "Moderate",
         seatingCapacity: "8 seats"
@@ -85,7 +108,7 @@ let carDisplay = {
         year: 2026,
         category: "Cat",
         color: "Strawberry Red",
-        price: "$240",
+        price: 240,
         fuelType: "Electric",
         horsepower: "Very Fast",
         seatingCapacity: "One seat"
@@ -132,8 +155,8 @@ function showMona() {
   document.getElementById('seatingCapacity').textContent = carDisplay.mona.seatingCapacity;
 
   
-  document.getElementById('performace').textContent = carDisplay.performanceRat();
-    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+  document.getElementById('performace').textContent = carDisplay.performanceRatM();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCatM();
 
 }
 
