@@ -67,6 +67,31 @@ let carDisplay = {
         seatingCapacity: "One seat "
     },
 
+    van: {
+        make: "Pontiac",
+        model: "Ford",
+        year: 2026,
+        category: "SUV",
+        color: "Husk Grey",
+        price: "$48,800",
+        fuelType: "Hyrbrid",
+        horsepower: "Moderate",
+        seatingCapacity: "8 seats"
+    },
+
+     buggy: {
+        make: "Mario",
+        model: "Go-Kart",
+        year: 2026,
+        category: "Cat",
+        color: "Strawberry Red",
+        price: "$240",
+        fuelType: "Electric",
+        horsepower: "Very Fast",
+        seatingCapacity: "One seat"
+    },
+
+
     
 }
 
@@ -131,6 +156,30 @@ function showJose() {
     document.getElementById('pricingRat').textContent = carDisplay.priceCat();
 
 }
+
+//van
+
+
+document.getElementById('family-btn').addEventListener('click', showVan);
+function showVan() {
+  document.getElementById('make').textContent = carDisplay.van.make;
+  document.getElementById('model').textContent = carDisplay.van.model;
+  document.getElementById('year').textContent = carDisplay.van.year;
+  document.getElementById('carType').textContent = carDisplay.van.category;
+  document.getElementById('color').textContent = carDisplay.van.color;
+  document.getElementById('price').textContent = carDisplay.van.price;
+  document.getElementById('fuelType').textContent = carDisplay.van.fuelType;
+  document.getElementById('horsepower').textContent = carDisplay.van.horsepower;
+  document.getElementById('seatingCapacity').textContent = carDisplay.van.seatingCapacity;
+
+  
+  document.getElementById('performace').textContent = carDisplay.performanceRat();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+
+}
+
+//bidbuggy
+
 
 
 
