@@ -8,7 +8,7 @@ let carDisplay = {
         year: 2015,
         category: "Sports Car",
         color: "Metallic",
-        price: "$63,425",
+        price: "$63425",
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
@@ -24,6 +24,7 @@ let carDisplay = {
         }
     },
 
+
     priceCat: function () {
         if (carDisplay.price > 50000) {
             return "Luxury"
@@ -32,20 +33,25 @@ let carDisplay = {
         } else {
             return "Budget Friendly"
         }
-    } 
+    }, 
+  
+
+
+
     
 
-    // mona: {
-    //     make: "The Phantom Thieves",
-    //     model: "Citroën H Van",
-    //     year: 1947,
-    //     category: "Ford",
-    //     color: "Classic Black",
-    //     price: "$34,457",
-    //     fuelType: "Fish",
-    //     horsepower: "Very Fast",
-    //     seatingCapacity: "Nine seats "
-    // }
+    mona: {
+        make: "The Phantom Thieves",
+        model: "Citroën H Van",
+        year: 1947,
+        category: "Ford",
+        color: "Classic Black",
+        price: "$34457",
+        fuelType: "Fish",
+        horsepower: "Very Fast",
+        seatingCapacity: "Nine seats "
+    }
+
 
     
 }
@@ -66,6 +72,7 @@ function showSports() {
 
   document.getElementById('performace').textContent = carDisplay.performanceRat();
     document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+
 
 
 }
