@@ -8,7 +8,7 @@ let carDisplay = {
         year: 2015,
         category: "Sports Car",
         color: "Metallic",
-        price: 63425,
+        price: "$63425",
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
@@ -26,9 +26,9 @@ let carDisplay = {
 
 
     priceCat: function () {
-        if (carDisplay.price > 50000) {
+        if (carDisplay.price >= "50000") {
             return "Luxury"
-        } else if (carDisplay.price > 30000) {
+        } else if (carDisplay.price >= "30000") {
             return "Moderate"
         } else {
             return "Budget Friendly"
@@ -46,7 +46,7 @@ let carDisplay = {
         year: 1947,
         category: "Ford",
         color: "Classic Black",
-        price: $34457,
+        price: "$34457",
         fuelType: "Fish",
         horsepower: "Very Fast",
         seatingCapacity: "Nine seats "
@@ -56,6 +56,7 @@ let carDisplay = {
     
 }
 
+//sports
 document.getElementById('sportscar-btn').addEventListener('click', showSports);
 function showSports() {
   document.getElementById('make').textContent = carDisplay.sports.make;
@@ -77,6 +78,25 @@ function showSports() {
 
 }
 
+//mona 
+
+document.getElementById('mona-btn').addEventListener('click', showMona);
+function showMona() {
+  document.getElementById('make').textContent = carDisplay.mona.make;
+  document.getElementById('model').textContent = carDisplay.mona.model;
+  document.getElementById('year').textContent = carDisplay.mona.year;
+  document.getElementById('carType').textContent = carDisplay.mona.category;
+  document.getElementById('color').textContent = carDisplay.mona.color;
+  document.getElementById('price').textContent = carDisplay.mona.price;
+  document.getElementById('fuelType').textContent = carDisplay.mona.fuelType;
+  document.getElementById('horsepower').textContent = carDisplay.mona.horsepower;
+  document.getElementById('seatingCapacity').textContent = carDisplay.mona.seatingCapacity;
+
+  
+  document.getElementById('performace').textContent = carDisplay.performanceRat();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+
+}
 
 
 
