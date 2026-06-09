@@ -181,6 +181,25 @@ function showVan() {
 //bidbuggy
 
 
+document.getElementById('buggy-btn').addEventListener(showBuggy);
+function showBuggy() {
+  document.getElementById('make').textContent = carDisplay.buggy.make;
+  document.getElementById('model').textContent = carDisplay.buggy.model;
+  document.getElementById('year').textContent = carDisplay.buggy.year;
+  document.getElementById('carType').textContent = carDisplay.buggy.category;
+  document.getElementById('color').textContent = carDisplay.buggy.color;
+  document.getElementById('price').textContent = carDisplay.buggy.price;
+  document.getElementById('fuelType').textContent = carDisplay.buggy.fuelType;
+  document.getElementById('horsepower').textContent = carDisplay.buggy.horsepower;
+  document.getElementById('seatingCapacity').textContent = carDisplay.buggy.seatingCapacity;
+
+  
+  document.getElementById('performace').textContent = carDisplay.performanceRat();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+
+}
+
+
 
 
 
