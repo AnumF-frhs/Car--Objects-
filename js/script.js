@@ -89,7 +89,7 @@ let carDisplay = {
         fuelType: "Electric",
         horsepower: "Very Fast",
         seatingCapacity: "One seat"
-    },
+    }
 
 
     
@@ -181,7 +181,7 @@ function showVan() {
 //bidbuggy
 
 
-document.getElementById('buggy-btn').addEventListener(showBuggy);
+document.getElementById('buggy-btn').addEventListener('click', showBuggy);
 function showBuggy() {
   document.getElementById('make').textContent = carDisplay.buggy.make;
   document.getElementById('model').textContent = carDisplay.buggy.model;
