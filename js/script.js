@@ -26,9 +26,9 @@ let carDisplay = {
 
 
     priceCat: function () {
-        if (carDisplay.price >= "50000") {
+        if (carDisplay.price === "50000") {
             return "Luxury"
-        } else if (carDisplay.price >= "30000") {
+        } else if (carDisplay.price ==="30000") {
             return "Moderate"
         } else {
             return "Budget Friendly"
@@ -50,8 +50,22 @@ let carDisplay = {
         fuelType: "Fish",
         horsepower: "Very Fast",
         seatingCapacity: "Nine seats "
-    }
+    },
 
+  
+  
+
+    jose: {
+        make: "Pontiac",
+        model: "Ford",
+        year: 1954,
+        category: "Convertible",
+        color: "Teal Blue",
+        price: "$425",
+        fuelType: "Flowers",
+        horsepower: "Slow",
+        seatingCapacity: "One seat "
+    },
 
     
 }
@@ -91,6 +105,26 @@ function showMona() {
   document.getElementById('fuelType').textContent = carDisplay.mona.fuelType;
   document.getElementById('horsepower').textContent = carDisplay.mona.horsepower;
   document.getElementById('seatingCapacity').textContent = carDisplay.mona.seatingCapacity;
+
+  
+  document.getElementById('performace').textContent = carDisplay.performanceRat();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+
+}
+
+//jose
+
+document.getElementById('jose-btn').addEventListener('click', showJose);
+function showJose() {
+  document.getElementById('make').textContent = carDisplay.jose.make;
+  document.getElementById('model').textContent = carDisplay.jose.model;
+  document.getElementById('year').textContent = carDisplay.jose.year;
+  document.getElementById('carType').textContent = carDisplay.jose.category;
+  document.getElementById('color').textContent = carDisplay.jose.color;
+  document.getElementById('price').textContent = carDisplay.jose.price;
+  document.getElementById('fuelType').textContent = carDisplay.jose.fuelType;
+  document.getElementById('horsepower').textContent = carDisplay.jose.horsepower;
+  document.getElementById('seatingCapacity').textContent = carDisplay.jose.seatingCapacity;
 
   
   document.getElementById('performace').textContent = carDisplay.performanceRat();
