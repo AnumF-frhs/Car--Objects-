@@ -8,7 +8,7 @@ let carDisplay = {
         year: 2015,
         category: "Sports Car",
         color: "Metallic",
-        price: "$63425",
+        price: 63425,
         fuelType: "Hybrid",
         horsepower: "Fast",
         seatingCapacity: "Two seats"
@@ -46,7 +46,7 @@ let carDisplay = {
         year: 1947,
         category: "Ford",
         color: "Classic Black",
-        price: "$34457",
+        price: $34457,
         fuelType: "Fish",
         horsepower: "Very Fast",
         seatingCapacity: "Nine seats "
