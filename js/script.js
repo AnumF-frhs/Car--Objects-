@@ -24,20 +24,28 @@ let carDisplay = {
         }
     },
 
-    // priceCat: function () {
+    priceCat: function () {
+        if (carDisplay.price > 50000) {
+            return "Luxury"
+        } else if (carDisplay.price > 30000) {
+            return "Moderate"
+        } else {
+            return "Budget Friendly"
+        }
+    } 
     
 
-    mona: {
-        make: "The Phantom Thieves",
-        model: "Citroën H Van",
-        year: 1947,
-        category: "Ford",
-        color: "Classic Black",
-        price: "$34,457",
-        fuelType: "Fish",
-        horsepower: "Very Fast",
-        seatingCapacity: "Nine seats "
-    }
+    // mona: {
+    //     make: "The Phantom Thieves",
+    //     model: "Citroën H Van",
+    //     year: 1947,
+    //     category: "Ford",
+    //     color: "Classic Black",
+    //     price: "$34,457",
+    //     fuelType: "Fish",
+    //     horsepower: "Very Fast",
+    //     seatingCapacity: "Nine seats "
+    // }
 
     
 }
@@ -57,7 +65,7 @@ function showSports() {
 //   document.getElementById('names').textContent = carDisplay.sports.make;
 
   document.getElementById('performace').textContent = carDisplay.performanceRat();
-//  document.getElementById('pricingRat').textContent = carDisplay.priceCat();
+    document.getElementById('pricingRat').textContent = carDisplay.priceCat();
 
 
 }
