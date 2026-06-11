@@ -3,6 +3,7 @@ body {
     background-color: #f0f8ff; /* A soft Alice Blue to make colors pop */
     font-family: 'Fredoka', sans-serif; /* The new cartoony font */
     color: #333;
+
 }
 
 /* Cartoony Navigation */
@@ -83,4 +84,8 @@ body {
     font-weight: 600;
     margin: 0;
     color: #222;
+}
+
+.center {
+    justify-self: center;
 }
